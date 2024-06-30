@@ -1,1 +1,9 @@
-<p>Hello world!</p>
+<input (keyup)="changeImage($event)" [value]="imageURL()" />
+
+<app-post [postImage]="imageURL()" (imageSelected)="logImage($event)">
+  <p>Hello World!</p>
+</app-post>
+
+<p>{{ name() }}</p>
+<p>{{ getName() }}</p>
+<p>{{ 5 + 2 }}</p>
